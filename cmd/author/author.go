@@ -20,10 +20,10 @@ var (
 		GIT_AUTHOR_NAME="%s";
 		GIT_AUTHOR_EMAIL="%s";
       fi
-      if [ "$GIT_COMMITTER_EMAIL" = "%s" ]
+      if [ "$GIT_COMMITTER_EMAIL" = "%s" ];
       then
-        GIT_COMMITTER_NAME="%s"
-        GIT_COMMITTER_EMAIL="%s"
+        GIT_COMMITTER_NAME="%s";
+        GIT_COMMITTER_EMAIL="%s";
       fi
         git commit-tree "$@";
       '  --tag-name-filter cat -- --branches --tags`
